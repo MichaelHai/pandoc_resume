@@ -140,14 +140,19 @@
 <dt><strong>AC Employee Service</strong></dt>
 <dd><p><strong>Department Manager, AC Department</strong>, 4 months</p>
 <p><strong>Group Manager, Expense Shanghai Group</strong>, 21 months</p>
-<p><em>AC Employee Service</em> is a lagend, web-based platform providing employee oriented features for accouting related products. Expense Shanghai Group works mainly in Expense application as well as some common features for the platform.</p>
-<p>As team leader,</p>
+<p><em>AC Employee Service</em> is a large, lagend, web-based platform providing employee oriented features for accouting related products. Different teams in differnt locations are working on the same code base for this product. Expense Shanghai Group (which becomes AC Department last year) works mainly in Expense application as well as some common features for the platform.</p>
+<p>The team consists of 8-10 members including a product owner, an UIUX designer, a tester and 5-7 developers. With the effort of the team, we managed to</p>
 <ul>
-<li>I created a Scrum based team.</li>
-<li>I integrated mordern technologies in legend system without breaking exsiting functions.</li>
-<li>I established a good enough CI/CD flow used by both devlopers and non-developers.</li>
-<li>I works mainly on reviewing code, solving critical issues and making design decisions.</li>
-<li>I lead to cooperate with other teams as both service consumer and API/library/framework provider.</li>
+<li>saperate the team’s code base from the large one makes it easir to develop, build and cooperate with other teams.</li>
+<li>introduced a good way to migrate from old technology to new ones gradually. This includes mirgrate the renderring from back-end based string concatnation to front-end renderring technology (<em>Vue</em> + <em>TypeScript</em>). It also includes introducing <em>Spring Framework</em> working tegother with the raw servlet code without breaking the legend features.</li>
+<li>implement rich features including excel-like grid with rich column type specific features, integrating with multiple external services and refactor the entire mobile web application form to provide rich and consistent user experience with PC pages.</li>
+</ul>
+<p>As senior and team leader, I also</p>
+<ul>
+<li>created a <em>Scrum</em> based team making the in-team cooperation with high efficiency.</li>
+<li>established a good enough <em>CI/CD</em> flow used by both devlopers and non-developers. The CI/CD flow makes it easy to test, integrate and deploy testing environments. Changes can be build and deployed less than 10 minutes automatically.</li>
+<li>works mainly on reviewing code, solving critical issues and making design decisions. I designed sub-systems including a OCR integration system, a front-end application state management system, batch-based data importing/exporting system with <em>Spring Batch</em>, etc.</li>
+<li>building helpful libraries assiting in feature development, including rest client framework, OpenAPI DSL and business specific abstract super classes.</li>
 </ul>
 </dd>
 <dt><strong>SLI Provider</strong></dt>
@@ -179,7 +184,7 @@
 </ul>
 </dd>
 <dt>OpenAPI DSL (Internal)</dt>
-<dd><p>It is a Kotlin-based DSL for OpenAPI in order to provide better way to write OpenAPI definition and code generation. I started this project when thinking of a good way of interface-fist developing style. This projects contains 2 sub-modules:</p>
+<dd><p>It is a Kotlin-based DSL for OpenAPI in order to provide better way to write OpenAPI definition and code generation. I started this project when thinking of a good way of interface-first developing style. This projects contains 2 sub-modules:</p>
 <ul>
 <li>DSL: the basic functions of DSL is alreadys implemented.</li>
 <li>Code Generation: this is still in design phase. It will include build tool integration which is still in desgin phase.</li>

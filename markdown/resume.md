@@ -33,16 +33,23 @@ Experience in Works Applications Co., Ltd.
 
     **Group Manager, Expense Shanghai Group**, 21 months
 
-    *AC Employee Service* is a lagend, web-based platform providing employee oriented features for accouting related products.
-    Expense Shanghai Group works mainly in Expense application as well as some common features for the platform.
+    *AC Employee Service* is a large, lagend, web-based platform providing employee oriented features for accouting related products.
+    Different teams in differnt locations are working on the same code base for this product.
+    Expense Shanghai Group (which becomes AC Department last year) works mainly in Expense application as well as some common features for the platform.
 
-    As team leader,
+    The team consists of 8-10 members including a product owner, an UIUX designer, a tester and 5-7 developers.
+    With the effort of the team, we managed to
 
-    * I created a Scrum based team.
-    * I integrated mordern technologies in legend system without breaking exsiting functions.
-    * I established a good enough CI/CD flow used by both devlopers and non-developers.
-    * I works mainly on reviewing code, solving critical issues and making design decisions.
-    * I lead to cooperate with other teams as both service consumer and API/library/framework provider.
+    * saperate the team's code base from the large one makes it easir to develop, build and cooperate with other teams.
+    * introduced a good way to migrate from old technology to new ones gradually. This includes mirgrate the renderring from back-end based string concatnation to front-end renderring technology (*Vue* + *TypeScript*). It also includes introducing *Spring Framework* working tegother with the raw servlet code without breaking the legend features.
+    * implement rich features including excel-like grid with rich column type specific features, integrating with multiple external services and refactor the entire mobile web application form to provide rich and consistent user experience with PC pages.
+
+    As senior and team leader, I also
+
+    * created a *Scrum* based team making the in-team cooperation with high efficiency.
+    * established a good enough *CI/CD* flow used by both devlopers and non-developers. The CI/CD flow makes it easy to test, integrate and deploy testing environments. Changes can be build and deployed less than 10 minutes automatically.
+    * works mainly on reviewing code, solving critical issues and making design decisions. I designed sub-systems including a OCR integration system, a front-end application state management system, batch-based data importing/exporting system with *Spring Batch*, etc.
+    * building helpful libraries assiting in feature development, including rest client framework, OpenAPI DSL and business specific abstract super classes.
 
 **SLI Provider**
 
@@ -80,7 +87,7 @@ Easy Rest Clint (Internal)
 
 OpenAPI DSL (Internal)
 :   It is a Kotlin-based DSL for OpenAPI in order to provide better way to write OpenAPI definition and code generation.
-    I started this project when thinking of a good way of interface-fist developing style. 
+    I started this project when thinking of a good way of interface-first developing style. 
     This projects contains 2 sub-modules:
 
     * DSL: the basic functions of DSL is alreadys implemented.
